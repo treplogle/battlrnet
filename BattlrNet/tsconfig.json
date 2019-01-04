@@ -1,0 +1,18 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "module": "system",
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "noEmitOnError": true,
+        "removeComments": true,
+        "outFile": "wwwroot/dist/main.js",
+        "target": "es5",
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "preserveConstEnums": false
+    },
+    "include": [
+        "ClientApp/**/*"
+    ]
+}

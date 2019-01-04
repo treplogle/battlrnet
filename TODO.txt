@@ -1,0 +1,21 @@
+Azure VM has 3 to 4 second network delay for player updates.
+    Pings seem to be working fine.
+Collision detection on the server.
+    Half-way there.  Still need sideways collision detection.
+Player vs Player collision detection.
+Remove dist files from Git
+Minify main.js
+Make sure player updates on server are threadsafe.
+Compress state updates and/or send state deltas.
+Remove unused code.
+
+
+
+#########
+# Done  #
+=========
+Make player movement smoother
+    Better server reconciliation
+    Smoother jumping
+Multiple players.
+Entity interpolation for other players.

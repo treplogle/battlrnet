@@ -1,0 +1,86 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="ClientApp\AABB.ts" />
+    <None Remove="ClientApp\App.ts" />
+    <None Remove="ClientApp\Camera.ts" />
+    <None Remove="ClientApp\Color.ts" />
+    <None Remove="ClientApp\Constants.ts" />
+    <None Remove="ClientApp\Direction.ts" />
+    <None Remove="ClientApp\Engine.ts" />
+    <None Remove="ClientApp\Entity.ts" />
+    <None Remove="ClientApp\EntityState.ts" />
+    <None Remove="ClientApp\IDrawable.ts" />
+    <None Remove="ClientApp\InputActionType.ts" />
+    <None Remove="ClientApp\InputManager.ts" />
+    <None Remove="ClientApp\IPoint.ts" />
+    <None Remove="ClientApp\LocalPlayer.ts" />
+    <None Remove="ClientApp\Map.ts" />
+    <None Remove="ClientApp\MovingObject.ts" />
+    <None Remove="ClientApp\NetworkClient.ts" />
+    <None Remove="ClientApp\Network\Messages\IMessage.ts" />
+    <None Remove="ClientApp\Network\Messages\JoinAcceptedMessage.ts" />
+    <None Remove="ClientApp\Network\Messages\JoinRequestMessage.ts" />
+    <None Remove="ClientApp\Network\Messages\MessageType.ts" />
+    <None Remove="ClientApp\Network\Messages\PingMessage.ts" />
+    <None Remove="ClientApp\Network\Messages\PlayerInfoMessage.ts" />
+    <None Remove="ClientApp\Network\Messages\PlayerInfoRequestMessage.ts" />
+    <None Remove="ClientApp\Network\Messages\PlayerInputMessage.ts" />
+    <None Remove="ClientApp\Network\Messages\PositionMessage.ts" />
+    <None Remove="ClientApp\Network\Messages\RejectReason.ts" />
+    <None Remove="ClientApp\Network\Messages\StateUpdateMessage.ts" />
+    <None Remove="ClientApp\Network\NetworkHelper.ts" />
+    <None Remove="ClientApp\Utilities.ts" />
+    <None Remove="ClientApp\Vector.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.WebSockets" Version="2.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="2.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.1.0-preview1-final" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\AABB.ts" />
+    <TypeScriptCompile Include="ClientApp\App.ts" />
+    <TypeScriptCompile Include="ClientApp\Camera.ts" />
+    <TypeScriptCompile Include="ClientApp\Color.ts" />
+    <TypeScriptCompile Include="ClientApp\Constants.ts" />
+    <TypeScriptCompile Include="ClientApp\Direction.ts" />
+    <TypeScriptCompile Include="ClientApp\Engine.ts" />
+    <TypeScriptCompile Include="ClientApp\Entity.ts" />
+    <TypeScriptCompile Include="ClientApp\EntityState.ts" />
+    <TypeScriptCompile Include="ClientApp\IDrawable.ts" />
+    <TypeScriptCompile Include="ClientApp\InputActionType.ts" />
+    <TypeScriptCompile Include="ClientApp\InputManager.ts" />
+    <TypeScriptCompile Include="ClientApp\IPoint.ts" />
+    <TypeScriptCompile Include="ClientApp\LocalPlayer.ts" />
+    <TypeScriptCompile Include="ClientApp\Map.ts" />
+    <TypeScriptCompile Include="ClientApp\MovingObject.ts" />
+    <TypeScriptCompile Include="ClientApp\Network\Messages\PlayerInfoMessage.ts" />
+    <TypeScriptCompile Include="ClientApp\Network\Messages\PlayerInfoRequestMessage.ts" />
+    <TypeScriptCompile Include="ClientApp\Network\Messages\PlayerInputMessage.ts" />
+    <TypeScriptCompile Include="ClientApp\Network\Messages\IMessage.ts" />
+    <TypeScriptCompile Include="ClientApp\Network\Messages\JoinAcceptedMessage.ts" />
+    <TypeScriptCompile Include="ClientApp\Network\Messages\JoinRequestMessage.ts" />
+    <TypeScriptCompile Include="ClientApp\Network\Messages\MessageType.ts" />
+    <TypeScriptCompile Include="ClientApp\Network\Messages\PingMessage.ts" />
+    <TypeScriptCompile Include="ClientApp\Network\Messages\PositionMessage.ts" />
+    <TypeScriptCompile Include="ClientApp\Network\Messages\RejectReason.ts" />
+    <TypeScriptCompile Include="ClientApp\Network\Messages\StateUpdateMessage.ts" />
+    <TypeScriptCompile Include="ClientApp\Network\NetworkClient.ts" />
+    <TypeScriptCompile Include="ClientApp\Network\NetworkHelper.ts" />
+    <TypeScriptCompile Include="ClientApp\Utilities.ts" />
+    <TypeScriptCompile Include="ClientApp\Vector.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+</Project>

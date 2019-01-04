@@ -1,0 +1,40 @@
+﻿@page
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Game</title>
+
+    <link rel="stylesheet" href="~/css/game.css">
+</head>
+<body onload="">
+
+    <canvas id="game"></canvas>
+
+    <div id="game-ui"></div>
+
+    <div id="game-ui-debug">
+        <div>Ping: <span id="debug-ping">0</span></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@0.21.4/dist/system-production.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fpsmeter@0.3.1/dist/fpsmeter.min.js"></script>
+
+    <script src="~/dist/main.js"></script>
+
+    <script>
+        window.fpsMeter = new FPSMeter({ theme: 'colorful', graph: 1, maxFps: 60, decimals: 1, heat: 1 });
+        SystemJS.config({});
+        let app;
+        SystemJS.import("App").then((a) => { app = a.default; });
+    </script>
+</body>
+</html>
